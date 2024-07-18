@@ -1,0 +1,10 @@
+<button
+  type="button"
+  class="btn border-0"
+  [ngClass]="size"
+  [class.active]="isActive"
+  routerLinkActive="active"
+>
+  <fa-icon *ngIf="icon" [icon]="icon" class="fa-icon-2xl"></fa-icon>
+  {{ text }}
+</button>
